@@ -97,13 +97,31 @@ https://github.com/THUDM/ReST-MCTS
 ## Citation
 
 ```
-@misc{xia2025agentrmenhancingagentgeneralization,
-      title={AgentRM: Enhancing Agent Generalization with Reward Modeling}, 
-      author={Yu Xia and Jingru Fan and Weize Chen and Siyu Yan and Xin Cong and Zhong Zhang and Yaxi Lu and Yankai Lin and Zhiyuan Liu and Maosong Sun},
-      year={2025},
-      eprint={2502.18407},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2502.18407}, 
+@inproceedings{xia-etal-2025-agentrm,
+    title = "{A}gent{RM}: Enhancing Agent Generalization with Reward Modeling",
+    author = "Xia, Yu  and
+      Fan, Jingru  and
+      Chen, Weize  and
+      Yan, Siyu  and
+      Cong, Xin  and
+      Zhang, Zhong  and
+      Lu, Yaxi  and
+      Lin, Yankai  and
+      Liu, Zhiyuan  and
+      Sun, Maosong",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.945/",
+    doi = "10.18653/v1/2025.acl-long.945",
+    pages = "19277--19290",
+    ISBN = "979-8-89176-251-0"
 }
+
 ```
