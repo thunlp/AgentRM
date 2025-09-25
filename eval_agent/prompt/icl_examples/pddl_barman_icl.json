@@ -1,0 +1,112 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nYour task is: The goal is to satisfy the following conditions: shot1 contains cocktail1.\nObservation: Cocktail1 part1 ingredient is ingredient1. Cocktail1 part2 ingredient is ingredient3. Cocktail2 part1 ingredient is ingredient2. Cocktail2 part2 ingredient is ingredient3. Cocktail3 part1 ingredient is ingredient1. Cocktail3 part2 ingredient is ingredient2. Dispenser1 dispenses ingredient1. Dispenser2 dispenses ingredient2. Dispenser3 dispenses ingredient3. Left hand is empty. Level l0 is next to level l1. Level l1 is next to level l2. Right hand is empty. Shaker1 is at empty level l0. Shaker1 is at level l0. Shaker1 is clean. Shaker1 is empty. Shaker1 is on the table. Shot1 is clean. Shot1 is empty. Shot1 is on the table. Shot2 is clean. Shot2 is empty. Shot2 is on the table. Shot3 is clean. Shot3 is empty. Shot3 is on the table. Shot4 is clean. Shot4 is empty. Shot4 is on the table."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Since cocktail1 ingredients are ingredient1 and ingredient3, I should choose one in shot1 and hold its dispenser, I can choose ingredient3 first.\nAction: fill-shot glass shot1 with ingredient3 with right and left holding dispenser3"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The action is not valid and therefore takes no effect. Please check valid actions."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should check the valid action I can do.\nAction: check valid actions"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Valid actions are: right grasp shot1. , left grasp shot3. , left grasp shot1. , left grasp shot2. , right grasp shaker1. , right grasp shot4. , right grasp shot3. , right grasp shot2. , left grasp shaker1. , left grasp shot4. , check valid actions"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: To satisfy 'shot1 contains cocktail1', I should grasp shot1 first.\nAction: right grasp shot1."
+        },
+        {
+            "role": "user",
+            "content": "Observation: You are holding right."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Since cocktail1 ingredients are ingredient1 and ingredient3, I should choose in shot and hold its dispenser, I can choose ingredient3.\nAction: fill-shot glass shot1 with ingredient3 with right and left holding dispenser3"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Pour shot1 from a shot glass to a used shaker ingredient3 and Shot1 contains ingredient3. "
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Shot1 contains ingredient3, I should pour it to a shaker. \nAction: pour-shot-to-clean-shaker from a shot glass shot1 with ingredient3 to a clean shaker shaker1 with hand right from level l0 to level l1"
+        },
+        {
+            "role": "user",
+            "content": "Observation:  Pour shot1 from a shot glass to a used shaker ingredient3 Shaker1 contains ingredient3."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The Shaker1 contains ingredient3 now. I should deal with ingredient1 now. To fill shot1 with ingredient1, I should clean shot1 first.\nAction: clean-shot glass shot1 with ingredient3 with hand right holding shot glass and left"
+        },
+        {
+            "role": "user",
+            "content": "Observation:  Shot1 is clean."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Since cocktail1 ingredients are ingredient1 and ingredient3, and ingredient3 has been made, I should choose ingredient1 with its dispenser.\nAction: fill-shot glass shot1 with ingredient1 with right and left holding dispenser1"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Pour shot1 from a shot glass to a used shaker ingredient1 and Shot1 contains ingredient1."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Shot1 contains ingredient1, shaker1 contains ingredient3. I should pour ingredient1 to shaker1.\nAction: pour-shot-to-used-shaker from a shot glass shot1 with ingredient1 to a used shaker shaker1 with hand right from level l1 to level l2"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Pour shot1 from a shot glass to a used shaker ingredient1 Shaker1 contains ingredient1. Shaker1 contains ingredient3. Shaker1 is at level l2. Shaker1 is on the table. Shaker1 is unshaked."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should clean shot1 and shake shaker1 since I'm holding shot1 now, I should clean shot1 first.\nAction: clean-shot glass shot1 with ingredient1 with hand right holding shot glass and left"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Shot1 is clean."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Shot1 will not use futher more, I should leave it.\nAction: right leave shot1"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Right hand is empty."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should use shaker1 to combine 2 ingredients. First, I should grasp it.\nAction: right grasp shaker1"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You are holding right."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should use shaker1 to combine 2 ingredients to cocktail1.\nAction: shake a cocktail cocktail1 with ingredient ingredient1 and ingredient ingredient3 in a shaker shaker1 with hand right and hand left"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Shaker1 is shaked."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should pour cocktail1 to shot1 to finish ‘shot1 contains cocktail1’. \nAction: pour-shaker-to-shot to a shot glass cocktail1 the ingredient shot1 with hand right from shaker shaker1 from level l2 to level l1"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Shot1 contains cocktail1. The task is completed.\n[END OF THE EXAMPLE]"
+        }
+    ]
+]

@@ -1,0 +1,48 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nThe goal is at position 8, 6. Your current position is at position 5, 8. There are walls above you, below you."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I am currently at position (5, 8) with walls above and below me, so I cannot move up or down. To move toward the goal at (8, 6), I should try to decrease my y position to get closer to the target column. I will move left.\n\nAction: move left"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The goal is at position 8, 6. Your current position is at position 5, 7. There are walls above you, below you."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I am now at position (5, 7) with walls still above and below. The goal is at (8, 6). I need to continue reducing my y position to get closer to column 6, as moving up or down is not possible due to walls. I will move left again.\n\nAction: move left"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The goal is at position 8, 6. Your current position is at position 5, 6. There is a wall above you."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I am at position (5, 6), which is now aligned with the goal's column at 6. Since there is a wall above me, I cannot move up. The goal is still down at position (8, 6), so I need to move down to decrease my x position. \n\nAction: move down"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The goal is at position 8, 6. Your current position is at position 6, 6. There are walls to your right, to your left."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I am at position (6, 6) and the goal is at (8, 6). Since there are walls to my left and right, I cannot move in either of those directions. To reach the goal, I should continue moving down.\n\nAction: move down"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The goal is at position 8, 6. Your current position is at position 7, 6. There are walls to your right, to your left."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I am at position (7, 6) and the goal is at (8, 6). With walls to my left and right, I cannot move in those directions. I should continue moving down to reach the goal.\n\nAction: move down"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Success\n"
+        }
+    ]
+]

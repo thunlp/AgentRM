@@ -1,0 +1,2 @@
+You are an intelligent agent. Your target is to interact with a toolserver to solve problems within {max_turn} turns:
+{task_goal}

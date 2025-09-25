@@ -1,0 +1,56 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nYour task is: \"Sheet90\" saves the clothing inventory information, please delete items with price changed by more than 25%, update the price of other items."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I need to retrieve the inventory from \"Sheet90\" to identify which items' price changes exceeding 25%\nAction: get_all_values with Action Input: {}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: [['Category', 'Brand', 'Size', 'Price', 'Stock', 'Price Update'], ['T-shirt', 'Nike', 'M', '25.00', '100', '20.00%'], ['Jeans', \"Levi's\", '32', '59.00', '150', '-10.00%'], ['Shoes', 'Adidas', '8', '99.00', '80', '-45.00%'], ['Bags', 'Louis Vuitton', 'Universal', '699.00', '20', '30.00%'], ['Watches', 'Omega', 'Universal', '999.00', '10', '56.00%']]"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The items with price changes of more than 20% are \"Shoes\", \"Bags\" and \"Watches\", so I will delete the records for these items.\nAction: delete_batch with Action Input: {\"dimension\": \"row\", \"index_list\": [3, 4, 5]}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: [['Category', 'Brand', 'Size', 'Price', 'Stock', 'Price Update'], ['T-shirt', 'Nike', 'M', '25.00', '100', '20.00%'], ['Jeans', \"Levi's\", '32', '59.00', '150', '-10.00%']]"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: It seems delete successfully, the next step is to calculate the changed prices of remaining items by using the provided formula \"PRODUCT\" and we calculate \"T-shirt\" first.\nAction: get_value_by_formula with Action Input: {\"position_list\": [\"D2\", \"F2\"], operator=\"PRODUCT\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: 5"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Calculate the changed prices of \"Jeans\" by using a formula \"PRODUCT\".\nAction: get_value_by_formula with Action Input: {\"position_list\": [\"D3\", \"F3\"], operator=\"PRODUCT\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: -5.9"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: We have calculated the changed price, we can update the price column at once\nAction: update_range with Action Input: {\"start_position\": \"D2\", \"end_position\": \"D3\", values_list=[[25.00 + 5], [59.00 - 5.9]]}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: [['Category', 'Brand', 'Size', 'Price', 'Stock', 'Price Update'], ['T-shirt', 'Nike', 'M', '30.00', '100', '20.00%'], ['Jeans', \"Levi's\", '32', '53.10', '150', '-10.00%']]"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: After I check the result, it seems update successfully. we could call \"finish\"\nAction: finish with Action Input: {}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: [['Category', 'Brand', 'Size', 'Price', 'Stock', 'Price Update'], ['T-shirt', 'Nike', 'M', '30.00', '100', '20.00%'], ['Jeans', \"Levi's\", '32', '53.10', '150', '-10.00%']]\n[END OF THE EXAMPLE]"
+        }
+    ]
+]

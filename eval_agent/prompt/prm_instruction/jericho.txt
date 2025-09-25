@@ -1,0 +1,19 @@
+You are in a fictional game environment.
+Your target is to interact with the environment to complete the following task within {max_turn} turns:
+{task_goal}
+
+Each turn you can perform one of the following actions:
+Inventory: check things you are carrying.
+Look: check your surroundings.
+Examine <place/obj>: check the details of something.
+Take <obj>: pickup obj.
+Put down <obj>: leave a obj at your current place.
+Drop <obj>
+Check valid actions: Check actions you can use.
+South: go south.
+North: go north.
+East: go east.
+West: go west.
+Up: go up.
+Down: go down.
+Other available actions could be determined through check valid actions.

@@ -1,0 +1,64 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nYour task is to: You are the warrior Link that needs to save the princess from the castle.\nObservation: You are at the path leading to the castle. The castle is to your north. There is a barrel in front of you."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Before proceeding to the castle, I should gather as much information as possible about my surroundings. Since 'Examine <place/obj>' is a valid action, I should examine barrel.\nAction: Examine barrel"
+        },
+        {
+            "role": "user",
+            "content": "Observation: There is a gleaming elvish sword."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have found a sword in the last turn observation. Taking the sword could significantly enhance my combat abilities and increase my chances of success in rescuing the princess from the castle.\nAction: take the sword"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The sword is taken"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Heading north will take me closer to the castle where the princess is held captive.\nAction: north"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Main hall \n The castle is dimly lit, with lava flowing in many places. There is a staircase leading up to princess bedroom, a door to your north leading to the kitchen hall, and the door you just entered on your south."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should check the valid action to go to princess's bedroom.\nAction: check valid actions"
+        },
+        {
+            "role": "user",
+            "content": "Observation: south, north, up, look, examine staircase"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should walk up the staircase to get into the princess's bedroom, the last observation shows that 'up' is a legal action.\nAction: up"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Princess’s bedroom. Princess is sleeping in bed."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should check valid action to figure out how to task princess away.\nAction: check valid actions"
+        },
+        {
+            "role": "user",
+            "content": "Observation: wake up the princess,  take out sword, down"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have take out sword in history, so I should not take it again. The 'wake up the princess' seems a solution in the last observation to save the princess from the castle.\nAction: wake up the princess"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The princess wake up from the coma. Thank you my knight, she says. The task is finished."
+        }
+    ]
+]

@@ -1,0 +1,296 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "Your task is to boil water. For compounds without a boiling point, combusting the substance is also acceptable. First, focus on the substance. Then, take actions that will cause it to change its state of matter.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: look around\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: This room is called the hallway. In it, you see: \n\ta picture\n\ta substance called air\n\tthe agent\nYou also see:\n\tA door to the green house (that is open)\n\tA door to the living room (that is open)\n\tA door to the art studio (that is open)\n\tA door to the kitchen (that is open)\n\tA door to the bedroom (that is open)\n\tA door to the workshop (that is open)\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: open door to kitchen\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The door is already open.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: go to kitchen\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move to the kitchen.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: look around\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: This room is called the kitchen. In it, you see: \n\ta substance called soap\n\ta painting\n\ta thermometer, currently reading a temperature of 10 degrees celsius\n\ta counter. On the counter is: a bowl (containing a banana, a potato, a red apple, an orange), a drawer.\n\ta sink, which is turned off. In the sink is: nothing.\n\ta table. On the table is: a glass cup (containing nothing).\n\ta chair. On the chair is: nothing.\n\ta freezer. The freezer door is closed. \n\ta lighter\n\ta stopwatch, which is deactivated. \n\ta fridge. The fridge door is closed. \n\ta substance called air\n\ta cupboard. The cupboard door is closed. \n\ta oven, which is turned off. The oven door is closed. \n\ta glass jar (containing a substance called sodium chloride)\n\tthe agent\n\ta stove, which is turned off. On the stove is: nothing.\nYou also see:\n\tA door to the outside (that is open)\n\tA door to the bathroom (that is open)\n\tA door to the hallway (that is open)\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: pick up thermometer\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the thermometer to the inventory.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: open cupboard\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The cupboard is now open.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: pick up metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the metal pot to the inventory.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: look around\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: This room is called the kitchen. In it, you see: \n\ta substance called soap\n\ta painting\n\ta counter. On the counter is: a bowl (containing a banana, a potato, a red apple, an orange), a drawer.\n\ta sink, which is turned off. In the sink is: nothing.\n\ta table. On the table is: a glass cup (containing nothing).\n\ta chair. On the chair is: nothing.\n\ta freezer. The freezer door is closed. \n\ta lighter\n\ta stopwatch, which is deactivated. \n\ta fridge. The fridge door is closed. \n\ta substance called air\n\ta cupboard. The cupboard door is open. In the cupboard is: a tin cup (containing nothing), a ceramic cup (containing nothing), a drawer.\n\ta oven, which is turned off. The oven door is closed. \n\ta glass jar (containing a substance called sodium chloride)\n\tthe agent\n\ta stove, which is turned off. On the stove is: nothing.\nYou also see:\n\tA door to the outside (that is open)\n\tA door to the bathroom (that is open)\n\tA door to the hallway (that is open)\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: move metal pot to sink\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation:  You move the metal pot to the sink.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: activate sink\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The sink is now activated.\n\nACTION: deactivate sink\nOBSERVATION: The sink is now deactivated.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: pick up metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the metal pot to the inventory.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: focus on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You focus on the water.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: pour metal pot into metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You can't move something into itself.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: pick up metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the metal pot to the inventory.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: move metal pot to stove\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the metal pot to the stove.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: activate stove\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The stove is now activated.\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 20 degrees celsius\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 28 degrees celsius\n\nACTION: examine substance in metal pot\nOBSERVATION: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 38 degrees celsius\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 48 degrees celsius\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 58 degrees celsius\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 68 degrees celsius\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 88 degrees celsius\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 98 degrees celsius\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine steam\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on steam\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 107 degrees celsius\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action:wait1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You decide to wait for 1 iterations.\n"
+        }
+    ]
+]

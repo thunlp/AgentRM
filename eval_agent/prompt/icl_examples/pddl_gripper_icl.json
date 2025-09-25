@@ -1,0 +1,96 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nYour task is: The goal is to satisfy the following conditions: ball1 is at roomb. , ball2 is at roomb. , ball3 is at roomb. \nObservation: Ball1 is a ball. Ball1 is at rooma. Ball2 is a ball. Ball2 is at rooma. Ball3 is a ball. Ball3 is at rooma. Left is a gripper. Left is free. Right is a gripper. Right is free. Robby is at rooma. Room rooma Room roomb"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Ball1, Ball2 and Ball3 are at the rooma their final condition is at roomb. I am also at rooma, so I can pick up 2 balls with different arms. \nAction: Pick up ball1 at rooma with arm right."
+        },
+        {
+            "role": "user",
+            "content": "Observation: Ball1 is a ball. Ball1 is carrying right. Ball2 is a ball. Ball2 is at rooma. Ball3 is a ball. Ball3 is at rooma.  Left is a gripper. Left is free. Right is a gripper. Robby is at rooma. Room rooma Room roomb"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have one empty grippers. I should pickup another ball. \nAction: Pick up ball2 at rooma with arm left."
+        },
+        {
+            "role": "user",
+            "content": "Observation: Ball1 is a ball. Ball1 is carrying right. Ball2 is a ball. Ball2 is carrying left. Ball3 is a ball. Ball3 is at rooma. Left is a gripper. Right is a gripper. Robby is at rooma. Room rooma Room roomb"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should move to roomb.\nAction: Move from rooma to roomb"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Ball1 is a ball. Ball1 is carrying right. Ball2 is a ball. Ball2 is carrying left. Ball3 is a ball. Ball3 is at rooma. Left is a gripper. Right is a gripper. Robby is at roomb. Room rooma Room roomb"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should drop two balls.\nAction: drop ball1 at rooma with arm right"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The action is not valid and therefore takes no effect. Please remember to satisfy the restriction of actions. You can also check valid actions. \nThought: The action is not valid, I should check valid actions."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: check valid actions"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Valid actions are: drop ball1 roomb right, drop ball2 roomb left, Move from roomb to rooma. , check valid actions"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should add right or left to drop balls.\nAction: drop ball1 roomb right"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Ball1 is a ball. Ball1 is at roomb. Ball2 is a ball. Ball2 is carrying left. Ball3 is a ball. Ball3 is at rooma. Left is a gripper. Right is a gripper. Right is free. Robby is at roomb. Room rooma Room roomb"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should drop ball2 roomb left.\nAction: drop ball2 roomb left"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Ball1 is a ball. Ball1 is at roomb. Ball2 is a ball. Ball2 is at roomb. Ball3 is a ball. Ball3 is at rooma. Left is a gripper. Left is free. Right is a gripper. Right is free. Robby is at roomb. Room rooma Room roomb"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should return rooma to pickup ball3.\nAction: move from roomb to rooma"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Ball1 is a ball. Ball1 is at roomb. Ball2 is a ball. Ball2 is at roomb. Ball3 is a ball. Ball3 is at rooma.Left is a gripper. Left is free. Right is a gripper. Right is free. Robby is at rooma. Room rooma Room roomb"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should  pickup ball3.\nAction: Pick up ball3 at rooma with arm right."
+        },
+        {
+            "role": "user",
+            "content": "Observation: Ball1 is a ball. Ball1 is at roomb. Ball2 is a ball. Ball2 is at roomb. Ball3 is a ball. Ball3 is carrying right.  Left is a gripper. Left is free. Right is a gripper. Robby is at rooma. Room rooma Room roomb"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should return roomb to drop ball3.\nAction: Move from rooma to roomb"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Ball1 is a ball. Ball1 is at roomb. Ball2 is a ball. Ball2 is at roomb. Ball3 is a ball. Ball3 is carrying right. Ball4 is a ball. Ball4 is at rooma. Left is a gripper. Left is free. Right is a gripper. Robby is at roomb. Room rooma Room roomb"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should drop ball3.\nAction: drop ball3 rooms right"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Ball1 is a ball. Ball1 is at roomb. Ball2 is a ball. Ball2 is at roomb. Ball3 is a ball. Ball3 is at roomb. Ball4 is a ball. Ball4 is at rooma. Left is a gripper. Left is free. Right is a gripper. Right is free. Robby is at roomb. Room rooma Room roomb. The task is completed.\n[END OF THE EXAMPLE]"
+        }
+    ]
+]

@@ -1,0 +1,48 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nWhat is the lowest temperature yesterday?"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: This question is about the lowest temperature yesterday.I should get the user's current location first.\nAction: get_user_current_location with Action Input: {}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Shanghai"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have got user's current location. Now, I should get the latitude and longitude information of user's current location.\nAction: get_latitude_longitude with Action Input: {\"name\": \"Shanghai\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: {'results': [{'name': 'Shanghai', 'latitude': 31.22222, 'longitude': 121.45806, 'country_code': 'CN'}, {'name': 'Shanghai', 'latitude': 34.85009, 'longitude': -87.08501, 'country_code': 'US'}, {'name': 'Cornelia', 'latitude': 38.64363, 'longitude': -93.73938, 'country_code': 'US'}]}"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have got the latitude and longitude information of Shanghai, I should get the current date to get the date of yesterday.\nAction: get_user_current_date with Action Input: {}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: 2015-01-02"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Current date in 2015-01-02, so yesterday is 2015-01-01. Now, I can get the temperature data of Shanghai in 2015-01-01.\nAction: get_historical_temp with Action Input: {\"latitude\": 31.22222, \"longitude\": 121.45806, \"start_date\": \"2015-01-01\", \"end_date\": \"2015-01-01\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: {'latitude': 31.200005, 'longitude': 121.5, 'daily_units': {'time': 'iso8601', 'temperature_2m_max': '°C', 'temperature_2m_min': '°C', 'temperature_2m_mean': '°C'}, 'daily': {'time': ['2015-01-01'], 'temperature_2m_max': [4.3], 'temperature_2m_min': [-3.6], 'temperature_2m_mean': [-0.1]}}"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The observation mentions that 'temperature_2m_mean': [-0.1]',so the average temperature is -0.1. I will call finish to end the goal.\nAction: finish with Action Input: {\"answer\": -0.1}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: -0.1\n[END OF THE EXAMPLE]"
+        }
+    ]
+]

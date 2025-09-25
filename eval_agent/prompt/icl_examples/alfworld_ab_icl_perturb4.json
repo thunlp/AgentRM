@@ -1,0 +1,374 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet4, a cabinet3, a cabinet2, a cabinet1, a countertop1, a garbagecan1, a handtowelholder2, a handtowelholder1, a sinkbasin2, a sinkbasin1, a toilet1, a toiletpaperhanger1, and a towelholder1.\nYour task is to: put some spraybottle on toilet.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The task is to put some spraybottle on toilet, so first i need to search the room for some spraybottle. After finding the spraybottle, i need to take it to the toilet. I wil start my search on cabinets.\n Action: go to cabinet1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the cabinet1, you see a cloth1, a soapbar1, a soapbottle1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: go to cabinet2\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The cabinet2 is closed.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: open cabinet2\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You open the cabinet2. The cabinet2 is open. In it, you see a candle1, and a spraybottle2.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have found a spraybottle2. To put it on toilet, i need to take it with me and go to the toilet.\n Action: take spraybottle2 from cabinet2\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You pick up the spraybottle2 from the cabinet2.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: go to toilet1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the toilet1, you see a soapbottle2.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Since the toilet can hold many things, just put the spraybottle on the toilet.\n Action: put spraybottle2 in/on toilet1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You put the spraybottle2 in/on the toilet1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: Task succeeded.\n"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "You are in the middle of a room. Looking quickly around you, you see a bathtubbasin1, a garbagecan1, a handtowelholder1, a shelf3, a shelf2, a shelf1, a sinkbasin1, a toilet1, a toiletpaperhanger1, and a towelholder1.\nYour task is to: clean some soapbar and put it in toilet.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The task is to clean some soapbar and put it in toilet, so i need to first find some soapbar, and clean it in a sinkbasin. Soapbar is likely to be found in toilet, so i'll start to search there.\n Action: go to toilet1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the toilet1, you see a soapbar4, and a soapbar3.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: take soapbar4 from toilet1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You pick up the soapbar4 from the toilet1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have taken soapbar4 with me, the next step is to clean it, so i need to go to the sinkbasin.\n Action: go to sinkbasin1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the sinkbasin1, you see nothing.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: clean soapbar4 with sinkbasin1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You clean the soapbar4 using the sinkbasin1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The task is to clean some soapbar and put it in toilet. I have cleaned soapbar4, then i need to put it in the toilet, so i need to go to the toilet now.\n Action: go to toilet1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the toilet1, you see a soapbar3.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: put soapbar4 in/on toilet1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You put the soapbar4 in/on the toilet1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: Task succeeded.\n"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet13, a cabinet12, a cabinet11, a cabinet10, a cabinet9, a cabinet8, a cabinet7, a cabinet6, a cabinet5, a cabinet4, a cabinet3, a cabinet2, a cabinet1, a coffeemachine1, a countertop1, a diningtable1, a drawer1, a fridge1, a garbagecan1, a microwave1, a shelf3, a shelf2, a shelf1, a sinkbasin1, a stoveburner4, a stoveburner3, a stoveburner2, a stoveburner1, and a toaster1.\nYour task is to: put a hot apple in fridge.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The task is to put a hot apple in fridge. So i need to first find an apple and heat it, i'll start my search on diningtables.\n Action: go to diningtable1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the diningtable1, you see a apple1, a bread1, a fork3, a fork2, a fork1, a mug2, a peppershaker3, a plate2, a pot1, a soapbottle3, a spatula1, a spoon3, a spoon2, a spoon1, a winebottle3, and a winebottle2.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: take apple1 from diningtable1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You pick up the apple1 from the diningtable1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I noticed that there is a mivrowave1 in the room, i will use it to heat the apple.\n Action: go to microwave1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The microwave1 is closed.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: heat apple1 with microwave1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You heat the apple1 using the microwave1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The apple is heated and i will take it to the fridge and put it in the fridge.\n Action: go to fridge1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The fridge1 is open. In it, you see a cup1, and a egg1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: put apple1 in/on fridge1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You put the apple1 in/on the fridge1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: Task succeeded.\n"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "You are in the middle of a room. Looking quickly around you, you see a cabinet16, a cabinet15, a cabinet14, a cabinet13, a cabinet12, a cabinet11, a cabinet10, a cabinet9, a cabinet8, a cabinet7, a cabinet6, a cabinet5, a cabinet4, a cabinet3, a cabinet2, a cabinet1, a coffeemachine1, a countertop2, a countertop1, a diningtable1, a drawer5, a drawer4, a drawer3, a drawer2, a drawer1, a fridge1, a garbagecan1, a microwave1, a safe1, a sinkbasin1, a stoveburner4, a stoveburner3, a stoveburner2, a stoveburner1, and a toaster1.\nYour task is to: cool some pan and put it in stoveburner.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The task is to cool some pan and put it in stoveburner, so i need to first find a pan and cool it. A pan is likely to be found on a stoveburner, so i plan to search all the stoveburners.\n Action: go to stoveburner1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the stoveburner1, you see nothing.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: go to stoveburner2\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the stoveburner2, you see a pot1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: go to stoveburner3\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the stoveburner3, you see a pan1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: take pan1 from stoveburner3\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You pick up the pan1 from the stoveburner3.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now i have taken the pan1 with me and i want to cool it using a fridge.\n Action: go to fridge1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The fridge1 is closed.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: cool pan1 with fridge1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You cool the pan1 using the fridge1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The pan1 is cooled, then i need to return the cooled pan1 to a stoveburner and put it on the stoveburner.\n Action: go to stoveburner1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the stoveburner1, you see nothing.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: put pan1 in/on stoveburner1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You put the pan1 in/on the stoveburner1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: Task succeeded.\n"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "You are in the middle of a room. Looking quickly around you, you see a coffeetable1, a diningtable1, a drawer4, a drawer3, a drawer2, a drawer1, a dresser1, a garbagecan1, a sidetable2, a sidetable1, and a sofa1.\nYour task is to: put two cellphone in sofa.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The task is to put two cellphone in sofa, so i need to first find a cellphone and put it on sofa. I'll start my search on coffeetables.\n Action: go to coffeetable1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the coffeetable1, you see a box1, a cellphone3, and a plate1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: take cellphone3 from coffeetable1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You pick up the cellphone3 from the coffeetable1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: go to sofa1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the sofa1, you see a newspaper2, a pillow1, a remotecontrol2, and a remotecontrol1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: put cellphone3 in/on sofa1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You put the cellphone3 in/on the sofa1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: In order to put two cellphones in sofa, i need to search for another phone, i'll start my search on diningtables.\n Action: go to diningtable1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the diningtable1, you see a cellphone2, a keychain2, a laptop1, a statue2, and a statue1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: take cellphone2 from diningtable1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You pick up the cellphone2 from the diningtable1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: go to sofa1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the sofa1, you see a cellphone3, a newspaper2, a pillow1, a remotecontrol2, and a remotecontrol1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: put cellphone2 in/on sofa1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You put the cellphone2 in/on the sofa1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: Task succeeded.\n"
+        }
+    ],
+    [
+        {
+            "role": "user",
+            "content": "You are in the middle of a room. Looking quickly around you, you see a coffeetable1, a diningtable1, a drawer4, a drawer3, a drawer2, a drawer1, a dresser1, a garbagecan1, a sidetable2, a sidetable1, and a sofa1.\nYour task is to: look at statue under the desklamp.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The task is to look at statue under the desklamp, so i need to find the statue first and then find the desklamp and look at the statue under the light. I'll start my search on dresser1.\n Action: go to dresser1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the dresser1, you see a cellphone3, a newspaper2, a statue1, and a television1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: take statue1 from dresser1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You pick up the statue1 from the dresser1.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have taken the statue with me and i need to find a desklamp now. I'll start my search on sidetable1.\n Action: go to sidetable1\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the sidetable1, you see nothing.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: go to sidetable2\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: On the sidetable2, you see a desklamp3, a newspaper1, and a statue2.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use desklamp3\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You turn on the desklamp3.\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: Task succeeded.\n"
+        }
+    ]
+]

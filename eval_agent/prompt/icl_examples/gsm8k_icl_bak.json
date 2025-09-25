@@ -1,0 +1,28 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "Weng earns $12 an hour for babysitting. Yesterday, she just did 50 minutes of babysitting. How much did she earn?"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: First, I should calculate how much Weng earns per minute of babysitting.\nAction: 12/60"
+        },
+        {
+            "role": "user",
+            "content": "Observation: 0.2"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now, I should calculate how much Weng earned for 50 minutes of babysitting.\nAction: 0.2 * 50"
+        },
+        {
+            "role": "user",
+            "content": "Observation: 10"
+        },
+        {
+            "role": "assistant",
+            "content": "Final Answer: 10"
+        }
+    ]
+]

@@ -1,0 +1,20 @@
+[
+    [
+        {
+            "from": "human",
+            "value": "in a company , 50 percent of the employees are men . if 60 percent of the employees are unionized and 70 percent of these are men , what percent of the non - union employees are women"
+        },
+        {
+            "from": "gpt",
+            "value": "Thought: We start by defining the percentages of men, unionized employees, and men in the union. Then we calculate the percentage of non-union employees by subtracting the union percentage from 100. Next, we calculate the percentage of women in the union by subtracting the percentage of men in the union from 100. Finally, we calculate the percentage of women in the non-union employees by multiplying the percentage of women in the union with the percentage of non-union employees and dividing by the union percentage. We round the result to two decimal places and print the answer.\nAction: \n```python\nmen_percentage = 50\nunion_percentage = 60\nmen_in_union_percentage = 70\n\nnon_union_percentage = 100 - union_percentage\nwomen_in_union_percentage = 100 - men_in_union_percentage\n\nwomen_in_non_union_percentage = (women_in_union_percentage / union_percentage) * non_union_percentage\n\nanswer = round(women_in_non_union_percentage, 2)\nprint(answer)\n```"
+        },
+        {
+            "from": "human",
+            "value": "Observation: 80.0"
+        },
+        {
+            "from": "gpt",
+            "value": "Final Answer: 80.0"
+        }
+    ]
+]

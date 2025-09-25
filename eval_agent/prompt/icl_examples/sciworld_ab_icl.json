@@ -1,0 +1,312 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nTask Description: Your task is to boil water. For compounds without a boiling point, combusting the substance is also acceptable. First, focus on the substance. Then, take actions that will cause it to change its state of matter."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Before initiating any actions, I need to assess my surroundings to gather information about the environment I'm in. By looking around, I can observe the substances available and identify any objects or equipment that might help me achieve my goal of boiling water. This initial step is crucial for formulating a plan and determining the next course of action.\nAction: look around"
+        },
+        {
+            "role": "user",
+            "content": "Observation: This room is called the hallway. In it, you see: \n\ta picture\n\ta substance called air\n\tthe agent\nYou also see:\n\tA door to the green house (that is open)\n\tA door to the living room (that is open)\n\tA door to the art studio (that is open)\n\tA door to the kitchen (that is open)\n\tA door to the bedroom (that is open)\n\tA door to the workshop (that is open)"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: To solve the task, I need to be in same location as water and have substance alone in a single container\nAction: open door to kitchen"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The door is already open."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: go kitchen"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move to the kitchen."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: pick up thermometer"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the thermometer to the inventory."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: open cupboard"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The cupboard is now open."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: pick up metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the metal pot to the inventory."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: move metal pot to sink"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the metal pot to the sink."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: activate sink"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The sink is now activated."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now I am in same location as water and have substance alone in a single container. Next, I need to focus on substance and make sure substance is in a liquid state\nAction: deactivate sink"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The sink is now deactivated."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: pick up metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the metal pot to the inventory."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: focus on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You focus on the water."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now I focus on substance and make sure substance is in a liquid state. Next, I need to have object on heater (stove)\nAction: pour metal pot into metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You can't move something into itself."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: pick up metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the metal pot to the inventory."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: move metal pot to stove"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You move the metal pot to the stove."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now I have object on heater (stove). Next, I need to activate heater (stove)\nAction: activate stove"
+        },
+        {
+            "role": "user",
+            "content": "Observation: The stove is now activated."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now I activate heater (stove). Next, I need to heat object by at least 20C\nAction: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 13 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 20 degrees celsius."
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 28 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now I heat object by at least 20C. Next, I need to make sure substance is in a gaseous state (or combusting)\nAction: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 38 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 48 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 58 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 68 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 78 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 88 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: examine substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called water"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on substance in metal pot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 98 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now I make sure substance is in a gaseous state (or combusting). Next, I need to examine the steam.\nAction: examine steam"
+        },
+        {
+            "role": "user",
+            "content": "Observation: a substance called steam"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: use thermometer in inventory on steam"
+        },
+        {
+            "role": "user",
+            "content": "Observation: the thermometer measures a temperature of 107 degrees celsius"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: wait1"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You decide to wait for 1 iterations."
+        }
+    ]
+]

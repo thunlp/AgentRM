@@ -1,0 +1,56 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "You should perform actions to accomplish the goal: i would like a 3 ounce bottle of bright citrus deodorant for sensitive skin, and price lower than 50.00 dollars\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: reset[]\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: WEB PAGE: {Let us begin shopping \n[Search]}\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: search[3 ounce bright citrus deodorant sensitive skin]\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: WEB PAGE: {\n[Back to Search] \nPage 1 (Total results: 15) \n[Next >] \n[B078GWRC1J] \nBright Citrus Deodorant by Earth Mama | Natural and Safe for Sensitive Skin, Pregnancy and Breastfeeding, Contains Organic Calendula 3-Ounce \n$10.99}\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: click[B078GWRC1J]\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: WEB PAGE: {\n[Back to Search] \n[< Prev] \nscent [assorted scents][bright citrus][calming lavender][ginger fresh][simply non-scents]\nsize [3 ounce (pack of 1)]}\n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: click[bright citrus]\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You have clicked bright citrus. \n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: click[3 ounce (pack of 1)]\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You have clicked 3 ounce (pack of 1). \n\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Action: click[Buy Now]\n"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You have bought 3 ounce (pack of 1).\n\n"
+        }
+    ]
+]

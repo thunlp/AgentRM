@@ -1,0 +1,32 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nYour task is: When did the movie Scream 6 come out?"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: To find out when Scream 6 was released, I can get the details of the movie using its title from the movie database using get_search_movie API.\nAction: get_search_movie with Action Input: {\"movie_name\": \"Scream 6\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: {'id': 934433, 'overview': 'Following the latest Ghostface killings, the four survivors leave Woodsboro behind and start a fresh chapter.', 'title': 'Scream VI'}"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The release date is not in the result. I can proceed to fetch more specific details of Scream 6, including its release date.\nAction: get_movie_details with Action Input: {\"movie_id\": \"934433\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: {'budget': 35000000, 'genres': [{'id': 27, 'name': 'Horror'}, {'id': 53, 'name': 'Thriller'}, {'id': 9648, 'name': 'Mystery'}], 'revenue': 168961389, 'vote_average': 7.175, 'release_date': '2023-03-08'}"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have obtained all the necessary details, including the release date of Scream 6, which is 2023-03-08. I can now conclude this task.\nAction: finish with Action Input: {\"answer\": \"2023-03-08\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: 2023-03-08\n[END OF THE EXAMPLE]"
+        }
+    ]
+]

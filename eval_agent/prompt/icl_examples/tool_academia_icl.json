@@ -1,0 +1,32 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nYour task is: When was the paper Learning the Principle of Least Action with Reinforcement Learning. published?"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Loading PaperNet with no specific input parameters will allow me to access the database that contains information about academic papers.\nAction: loadPaperNet with Action Input: {}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: PaperNet is loaded."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The question is asking the published date of a paper, I should use paperNodeCheck to search the paper from the PaperNet database in DBLP graph.\nAction: paperNodeCheck with Action Input: {\"node\":\"Learning the Principle of Least Action with Reinforcement Learning.\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: {'year': 2021, 'venue': 'AAAI Spring Symposium - MLPS', 'n_citation': 0, 'keywords': [], 'doc_type': 'Conference'}"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have obtained the publication year of the paper, which is 2021. This information is sufficient to complete the user's request.\nAction: finish with Action Input: {\"answer\": \"2021\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: 2021\n[END OF THE EXAMPLE]"
+        }
+    ]
+]

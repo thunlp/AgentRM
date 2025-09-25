@@ -1,0 +1,6 @@
+You are web shopping. Your target is to interact with a shopping website to complete the following task:
+{task_goal}
+
+Each turn you can perform one of the following actions:
+search[keywords]: you can use search action if search is available and the keywords are up to you.
+click[value]: you can click one of the buttons in clickables.

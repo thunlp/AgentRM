@@ -1,0 +1,16 @@
+You are an intelligent agent in a household environment.
+Your target is to interact with a household to complete the following task within {max_turn} turns:
+{task_goal}
+
+Each turn you can perform one of the following actions:
+go to <recep>
+take <obj> from <recep>
+put <obj> in/on <recep>
+open <recep>
+close <recep>
+toggle <obj> <recep>
+clean <obj> with <recep>
+heat <obj> with <recep>
+cool <obj> with <recep>
+
+where <obj> and <recep> correspond to objects and receptacles.

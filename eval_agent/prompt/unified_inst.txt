@@ -1,0 +1,116 @@
+Evaluate the reasoning process for the following tasks and determine the score for the final reasoning step.
+
+Task 1:alfworld
+Interact with a household to solve a task. Imagine you are an intelligent agent in a household environment and your target is to perform actions to complete the task goal. 
+The available actions are:
+1. go to {recep}
+2. take {obj} from {recep}
+3. put {obj} in/on {recep}
+4. open {recep}
+5. close {recep}
+6. toggle {obj} {recep}
+7. clean {obj} with {recep}
+8. heat {obj} with {recep}
+9. cool {obj} with {recep}
+where {obj} and {recep} correspond to objects and receptacles.
+
+Task 2:babyai
+Interact with a household to solve a task. Imagine you are an intelligent agent in a household environment and your target is to perform actions to complete the task goal. At the beginning of your interactions, you will be given the detailed description of the current environment and your goal to accomplish. 
+The available actions are:
+1. turn right
+2. turn left
+3. move forward
+4. go to <obj> <id>
+5. pick up <obj> <id>
+6. go through <door> <id>: <door> must be an open door.
+7. toggle and go through <door> <id>: <door> can be a closed door or a locked door. If you want to open a locked door, you need to carry a key that is of the same color as the locked door.
+8. toggle: there is a closed or locked door right in front of you and you can toggle it.
+
+Task 3:gsm8k
+Imagine you are a powerful agent with broad math knowledge and great Python programming skills.
+Analyze and respond to the following math question step by step.
+After that, you have three options for Action part:
+1) Interact with a python interpreter and receive the corresponding output. Any natural language in it should be commented out. You should use this format: "Thought: your thought\nAction: ```python\n<the python command>\n```".
+2) Do nothing. You should use this format: "Thought: your thought\nAction: None".
+3) Submit the result. You should use this format: "Thought: your thought\nFinal Answer: $your answer$".
+
+Task 4: intercode_sql
+Imagine you are a helpful assistant assigned with the task of problem-solving. To achieve this, you will interact with a MySQL Database system using SQL queries to answer a question.
+At each turn, you should first provide your step-by-step thinking for solving the task. Your thought process should start with "Thought: ", for example: Thought: I should write a SQL query that gets the average GNP and total population from nations whose government is US territory.
+After that, you have two options for Action part:
+1) Interact with a mysql programming environment and receive the corresponding output. Your code should start with "Action: " and should be surrounded with ```sql ``` tag, for example: Action: \n```sql\nSELECT AVG(GNP), SUM(population) FROM nations WHERE government = 'US Territory'\n```
+2) Directly submit the result, for example: Action: submit.
+
+Task 5:math
+Imagine you are a powerful agent with broad math knowledge and great Python programming skills.
+Analyze and respond to the following math question step by step.
+At each turn, you should first provide your step-by-step thinking for solving the task. Your thought process should start with "Thought: ".
+After that, you have three options for Action part:
+1) Interact with a python interpreter and receive the corresponding output. Any natural language in it should be commented out. You should use this format: "Thought: your thought\nAction: ```python\n<the python command>\n```".
+2) Do nothing. You should use this format: "Thought: your thought\nAction: None".
+3) Submit the result. You should use this format: "Thought: your thought\nFinal Answer: $your answer$".
+
+Task 6:math_qa
+Imagine you are a helpful assistant assigned with the task of problem-solving. To achieve this, you will perform calculations or derive formulas to answer a mathematical question.\nAt each turn, you should first provide your step-by-step thinking for solving the task. Your thought process should start with \"Thought: \",  for example: Thought: I should derive the formula for the volume of a sphere given its radius.\nAfter that, you have two options for Action part:
+1)Perform the calculation or derive the formula, you can also interact with a python programming environment and receive the corresponding output. Your code should start with \"Action: \" and should be surrounded with ```python ``` tag, for example: Action: \n```python\noriginal_price = 100.0\ndiscount = 20.0\nincrease = 55.0\n\ndiscounted_price = original_price - (original_price * discount / 100)\nselling_price = discounted_price + (discounted_price * increase / 100)\n\nprofit = selling_price - original_price\nprofit_percentage = (profit / original_price) * 100\n\nprint(profit_percentage)\n```\n.
+2)submit the result, for example: Action: \nFinal Answer: 24.0.You should use this format: \"Thought: your thought\nAction: \nyour option\n<the mathematical calculation or formula or result>\n\"Your output should contain only one \"Action\" part.The \"Action\" part should present the calculation or formula or result. Any natural language in it should be commented out.The calculation and submit parts cannot appear in your output simultaneously.
+
+Task 7:sciworld
+Imagine you are a helpful assistant to do some scientific experiment in an environment.
+In the environment, there are several rooms: kitchen, foundry, workshop, bathroom, outside, living room, bedroom, greenhouse, art studio, hallway
+You should explore the environment and find the items you need to complete the experiment.
+You can teleport to any room in one step.
+All containers in the environment have already been opened, you can directly get items from the containers.
+
+The available actions are:
+open OBJ: open a container
+close OBJ: close a container
+activate OBJ: activate a device
+deactivate OBJ: deactivate a device
+connect OBJ to OBJ: connect electrical components
+disconnect OBJ: disconnect electrical components
+use OBJ [on OBJ]: use a device/item
+look around: describe the current room
+examine OBJ: describe an object in detail
+look at OBJ: describe a container's contents
+read OBJ: read a note or book
+move OBJ to OBJ: move an object to a container
+pick up OBJ: move an object to the inventory
+pour OBJ into OBJ: pour a liquid into a container
+mix OBJ: chemically mix a container
+teleport to LOC: teleport to a specific room
+focus on OBJ: signal intent on a task object
+wait: task no action for 10 steps
+wait1: task no action for a step
+
+Task 8:webshop
+Imagine you are web shopping.
+I will give you instructions about what to do.
+You have to follow the instructions.
+Every round I will give you an observation and a list of available actions, you have to respond an action based on the state and instruction.
+You can use search action if search is available.
+You can click one of the buttons in clickables.
+An action should be of the following structure:
+search[keywords]
+click[value]
+If the action is not valid, perform nothing.
+Keywords in search are up to you, but the value in click must be a value in the list of available actions.
+
+Task 9:babyai
+Interact with a household to solve a task. Imagine you are an intelligent agent in a household environment and your target is to perform actions to complete the task goal. At the beginning of your interactions, you will be given the detailed description of the current environment and your goal to accomplish. 
+For each of your turn, you will be given the observation of the last turn. You should first think about the current condition and plan for your future actions, and then output your action in this turn. Your output must strictly follow this format:"Thought: your thoughts.\nAction: your next action".
+
+The available actions are:
+1. turn right
+2. turn left
+3. move forward
+4. go to <obj> <id>
+5. pick up <obj> <id>
+6. go through <door> <id>: <door> must be an open door.
+7. toggle and go through <door> <id>: <door> can be a closed door or a locked door. If you want to open a locked door, you need to carry a key that is of the same color as the locked door.
+8. toggle: there is a closed or locked door right in front of you and you can toggle it.
+
+
+
+
+

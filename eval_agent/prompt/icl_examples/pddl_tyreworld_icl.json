@@ -1,0 +1,88 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nYour task is: The goal is to satisfy the following conditions: w1 is in boot. (Note you need to open boot first so that you can extract tools from it.)\nObservation: Boot is closed. Boot is unlocked. Hub the-hub1 is fastened. Hub the-hub1 is on the ground. Jack is in boot. Pump is in boot. R1 is in boot. The nut nuts1 on the hub the-hub1 is tight. Wheel r1 is intact. Wheel r1 is not inflated. Wheel w1 is on hub the-hub1. Wrench is in boot."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should check what I can do.\nAction: check valid actions."
+        },
+        {
+            "role": "user",
+            "content": "Observation: Valid actions are: Open boot. Check valid actions. Look around."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Since boot is unlocked, I should directly open the boot.\nAction: Open boot."
+        },
+        {
+            "role": "user",
+            "content": "Observation: Boot is open."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should loosen the w1, so I should fetch wrench first.\nAction: fetch wrench from boot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You have wrench."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should check what I can do.\nAction: check valid actions"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Valid actions are: Fetch pump from boot., Fetch r1 from boot., Put-away wrench in boot., Close boot., Fetch jack from boot., Loosen the nut nuts1 on the hub the-hub1., check valid actions"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Since Wheel w1 is on hub the-hub1 and The nut nuts1 on the hub the-hub1 is tight, I should loosen the nut nuts1.\nAction: Loosen the nut nuts1 on the hub the-hub1."
+        },
+        {
+            "role": "user",
+            "content": "Observation: The nut nuts1 on the hub the-hub1 is loose."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I want to remove w1 from the-hub1, so I need jack.\nAction: fetch jack from boot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: You have jack."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I should jack-up the hub the-hub1.\nAction: jack-up the hub the-hub1"
+        },
+        {
+            "role": "user",
+            "content": "Observation: Hub the-hub1 is not on the ground."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I want to remove w1 from the-hub1, so I need to undo the fastening of the nut nuts1.\nAction: Undo the fastening of the nut nuts1 on the hub the-hub1."
+        },
+        {
+            "role": "user",
+            "content": "Observation: Hub the-hub1 is unfastened."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I need to remove w1 from the-hub1.\nAction: Remove-wheel w1 from the hub the-hub1."
+        },
+        {
+            "role": "user",
+            "content": "Observation: You have w1."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I need to put w1 in boot. \nAction: Put-away w1 in boot"
+        },
+        {
+            "role": "user",
+            "content": "Observation: W1 is in boot. Goal is completed.\n[END OF THE EXAMPLE]"
+        }
+    ]
+]

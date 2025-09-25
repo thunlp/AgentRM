@@ -1,0 +1,40 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nYour task is: The goal is to satisfy the following conditions: b1 is on b2., b2 is on b3.\nObservation: b1 is on the table.  b2 is on the table.  B3 is on the table. Robot arm is empty. The b1 is clear. The b2 is clear. The b3 is clear."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Since the arm is empty and b2 is on the table, I can pick up b2.\nAction: pickup b2"
+        },
+        {
+            "role": "user",
+            "content": "Observation: b1 is on the table. The b1 is clear. The b3 is clear. You are holding b2."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now that I am holding b2, I can stack it on b3.\nAction: stack b2 b3"
+        },
+        {
+            "role": "user",
+            "content": "Observation: b1 is on the table. b2 is on b3. B3 is on the table. Robot arm is empty. The b1 is clear. The b2 is clear."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The goal is almost satisfied, I just need to pick up b1 and stack it on b2.\nAction: pickup b1"
+        },
+        {
+            "role": "user",
+            "content": "Observation: b2 is on b3. B3 is on the table. Robot arm is empty. The b2 is clear. You are holding b1."
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Now that I am holding b1, I can stack it on b2 to satisfy the goal.\nAction: stack b1 b2"
+        },
+        {
+            "role": "user",
+            "content": "Observation: b1 is on b2. b2 is on b3. B3 is on the table. Robot arm is empty. The b1 is clear. The goal is satisfied.\n[END OF THE EXAMPLE]"
+        }
+    ]
+]

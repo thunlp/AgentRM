@@ -1,0 +1,40 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nLet's start Wordle!"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: To maximize the information gained from the first guess, I should choose a word with common letters and a good mix of vowels and consonants. \"solar\" fits this criterion well.\n\nAction: s o l a r"
+        },
+        {
+            "role": "user",
+            "content": "Observation: b b b y y\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The letters \"s,\" \"o,\" \"l,\" and \"r\" are not in the word at all, while \"a\" and \"r\" are in the word but not in the correct positions. Based on this, I can eliminate those letters and focus on words that contain \"a\" in a different position and avoid \"s,\" \"o,\" \"l,\" and \"r.\" A good candidate would be \"wince.\"\n\nAction: w i n c e"
+        },
+        {
+            "role": "user",
+            "content": "Observation: b b b b g\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The letter \"e\" is in the correct position at the end of the word, while \"w,\" \"i,\" \"n,\" and \"c\" are not in the word. I need to find a word that ends with \"e\" and contains \"a\" and \"r\" in different positions. \"crimp\" is a good candidate as it ends with \"e\" and contains \"a\" and \"r.\"\n\nAction: c r i m p"
+        },
+        {
+            "role": "user",
+            "content": "Observation: b g b g b\n"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: The letter \"r\" is in the correct second position, and \"a\" is in the word but not in the third position. The word ends with \"e.\" I need to find a word that fits these criteria. \"frame\" is a good candidate as it has \"r\" in the second position, \"a\" in a different position, and ends with \"e.\"\n\nAction: f r a m e"
+        },
+        {
+            "role": "user",
+            "content": "Observation: g g g g g\n"
+        }
+    ]
+]

@@ -1,0 +1,32 @@
+[
+    [
+        {
+            "role": "user",
+            "content": "[START OF THE EXAMPLE]\nYour task is: Is Prepare for history quiz a task of School project?"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: To check whether Prepare for history quiz is a task of School project, I should get the tasks of School project.But get_task requires project_id, I should first get the project id of School.\nAction: get_projects with Action Input: {}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: [{'id': '12345', 'order': 0, 'color': 'charcoal', 'name': 'School', 'is_favorite': false}]"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: I have got the project id of School. I should get the tasks of School project.\nAction: get_tasks with Action Input: {\"project_id\": \"12345\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: [{'id': '123451', 'order': 0, 'content': 'Prepare for history quiz', 'is_completed': false, 'priority': 1, 'due_date': '2030-10-10'}, {'id': '123452', 'order': 1, 'content': 'Prepare for math quiz', 'is_completed': false, 'priority': 1, 'due_date': '2030-11-10'}]"
+        },
+        {
+            "role": "assistant",
+            "content": "Thought: Prepare for history quiz is in the result, so it is a task of School project. I will call action: finish to terminate the conversation.\nAction: finish with Action Input: {\"answer\": \"yes\"}"
+        },
+        {
+            "role": "user",
+            "content": "Observation: yes\n[END OF THE EXAMPLE]"
+        }
+    ]
+]
