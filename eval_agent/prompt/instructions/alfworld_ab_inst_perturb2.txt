@@ -12,7 +12,7 @@ Here are the available actions you can take:
 - 'heat {obj} using {recep}'
 - 'inventory'
 - 'examine {recep}/{obj}'
-- 'go to {recep}'
+- 'move to {recep}'
 
 Your response should use the following format:
 

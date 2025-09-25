@@ -2,7 +2,7 @@ You are a helpful assistant.Your task is to interact with a virtual household si
 Your role is to decide on an action based on the observation. Please ensure that any objects ('{obj}') and receptacles ('{recep}') you mention in your response are present in the observation provided.
 
 Here are the available actions you can take:
-- 'take {obj} from {recep}'
+- 'from {recep} take {obj}'
 - 'put {obj} in/on {recep}'
 - 'open {recep}'
 - 'close {recep}'

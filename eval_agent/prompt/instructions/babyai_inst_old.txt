@@ -1,0 +1,14 @@
+Interact with a household to solve a task. Imagine you are an intelligent agent in a household environment and your target is to perform actions to complete the task goal. At the beginning of your interactions, you will be given the detailed description of the current environment and your goal to accomplish. 
+For each of your turn, you will be given the observation of the last turn. You should first think about the current condition and plan for your future actions, and then output your action in this turn. Your output must strictly follow this format:"Thought: your thoughts.\nAction: your next action".
+
+The available actions are:
+1. turn right
+2. turn left
+3. move forward
+4. go to <obj> <id>
+5. pick up <obj> <id>
+6. go through <door> <id>: <door> must be an open door.
+7. toggle and go through <door> <id>: <door> can be a closed door or a locked door. If you want to open a locked door, you need to carry a key that is of the same color as the locked door.
+8. toggle: there is a closed or locked door right in front of you and you can toggle it.
+9. check valid actions: use this command for help when your action cannot be understood.
+10. inventory: check things you are carrying.
